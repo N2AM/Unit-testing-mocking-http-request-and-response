@@ -2,8 +2,11 @@
   "name": "unit-testing-mocking-http-request-and-response",
   "version": "1.0.0",
   "description": "Unit testing services (async code) by mocking Axios http requests and responses using Jest.",
-  "main": "unsplach.spec.js",
+  "main": "index.js",
   "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "prod": "parcel build --prod src/index.html",
     "test": "jest"
   },
   "repository": {
@@ -37,6 +40,7 @@
   },
   "devDependencies": {
     "jest": "^26.4.2",
-    "parcel-bundler": "^1.12.4"
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.26.11"
   }
 }
