@@ -13,3 +13,7 @@
 ## Add Axios
 
 `npm install axios`
+
+## As we’ll be using (async) and (await) inside of our project, we’ll install Babel and the @babel/polyfill package
+
+`npm i @babel/core @babel/polyfill`

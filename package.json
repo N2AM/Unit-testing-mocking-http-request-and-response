@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "parcel src/index.html",
     "build": "parcel build src/index.html",
-    "prod": "parcel build --prod src/index.html",
+    "prod": "parcel build src/index.html",
     "test": "jest"
   },
   "repository": {
@@ -36,6 +36,8 @@
   },
   "homepage": "https://github.com/N2AM/Unit-testing-mocking-http-request-and-response#readme",
   "dependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/polyfill": "^7.11.5",
     "axios": "^0.20.0"
   },
   "devDependencies": {
