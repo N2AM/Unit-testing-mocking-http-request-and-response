@@ -1,4 +1,6 @@
 import axios from "axios";
+
+//GET
 export default async (term) => {
   const response = await axios.get("https://api.unsplash.com/search/photos", {
     params: {
@@ -8,3 +10,9 @@ export default async (term) => {
   });
   return response.data.results;
 };
+
+// POST
+
+//PUT
+
+//DELETE
