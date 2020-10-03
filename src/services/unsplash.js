@@ -6,4 +6,5 @@ export default async (term) => {
       query: term,
     },
   });
+  return response.data.results;
 };
