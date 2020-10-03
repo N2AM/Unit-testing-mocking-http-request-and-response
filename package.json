@@ -1,0 +1,41 @@
+{
+  "name": "unit-testing-mocking-http-request-and-response",
+  "version": "1.0.0",
+  "description": "Unit testing services (async code) by mocking Axios http requests and responses using Jest.",
+  "main": "unsplach.spec.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/N2AM/Unit-testing-mocking-http-request-and-response.git"
+  },
+  "keywords": [
+    "Unit",
+    "testing",
+    "services",
+    "(async",
+    "code)",
+    "by",
+    "mocking",
+    "Axios",
+    "http",
+    "requests",
+    "and",
+    "responses",
+    "using",
+    "Jest"
+  ],
+  "author": "Nouran Al-Refai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/N2AM/Unit-testing-mocking-http-request-and-response/issues"
+  },
+  "homepage": "https://github.com/N2AM/Unit-testing-mocking-http-request-and-response#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}
