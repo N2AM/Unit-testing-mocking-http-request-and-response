@@ -22,6 +22,6 @@ export const postTodo = async (todo) => {
   }
 };
 
-//PUT
-
 //DELETE
+
+//PUT

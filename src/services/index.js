@@ -6,17 +6,35 @@ getToDos().then((data) => {
   displayTitle(data.slice(0, 3));
 });
 
+const createLi = (element) => {
+  let li = document.createElement("li");
+  document.querySelector(".list ul").appendChild(li);
+  li.textContent += element;
+};
+
 const displayTitle = (data) => {
-  data.forEach((element, index) => {
-    let li = document.createElement("li");
-    document.querySelector(".list ul").append(li);
-    document.querySelectorAll(".list ul li")[index].textContent +=
-      element.username;
-  });
+  if (Array.isArray(data) && data.length > 0) {
+    data.forEach((element, index) => {
+      createLi(element.username);
+    });
+  } else if (data) {
+    console.log(data);
+    createLi(data);
+  }
 };
 
 //POST Data
 
-const addToDo = () => {
-  let form = document.querySelector("form");
-};
+var form = document.querySelector("form");
+const formEvent = form.addEventListener("submit", async (event) => {
+  event.preventDefault();
+  let title = document.getElementById("new-todos__name").value;
+  let userId = document.getElementById("new-todos__userId").value;
+
+  const toDo = {
+    title,
+    userId,
+  };
+  const addToDo = await postTodo(toDo);
+  displayTitle(title);
+});

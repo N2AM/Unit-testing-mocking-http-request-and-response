@@ -14,7 +14,7 @@
 
 `npm install axios`
 
-## As we’ll be using (async) and (await) inside of our project, we’ll install Babel and the @babel/polyfill package
+## As we’ll be using (async) and (await) inside of our project, we’ll install Babel and the @babel/polyfill package (Not a must)
 
 `npm i @babel/core @babel/polyfill`
 
