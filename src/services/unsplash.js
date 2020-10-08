@@ -24,4 +24,22 @@ export const postTodo = async (todo) => {
 
 //DELETE
 
+export const deleteToDo = async (id) => {
+  try {
+    const response = await axios.delete(`${BASE_URL}/todos/${id}`);
+    return response.data;
+  } catch (e) {
+    console.log(e);
+  }
+};
+
 //PUT
+
+export const editToDo = async (id) => {
+  try {
+    const response = await axios.put(`${BASE_URL}/todos/${id}`);
+    return response.data;
+  } catch (e) {
+    console.log(e);
+  }
+};
