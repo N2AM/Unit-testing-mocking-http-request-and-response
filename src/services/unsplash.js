@@ -1,15 +1,23 @@
+
 import axios from "axios";
 import { BASE_URL } from "../environments/env";
 
 //GET
 export const getToDos = async () => {
   try {
-    const response = await axios.get(`${BASE_URL}/users`);
+    const response = await axios.get(`${BASE_URL}/users`); // Promise resolve
     return response.data;
   } catch (e) {
     console.log(e);
   }
 };
+
+// GET 
+// return a promise
+export const get = () => {
+ return axios.get(`${BASE_URL}/users`);
+   
+}
 
 // POST
 

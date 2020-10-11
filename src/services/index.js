@@ -1,10 +1,12 @@
-import { getToDos, postTodo } from "./unsplash";
+import { get, postTodo } from "./unsplash";
 import "../sass/style.scss";
 
 //GET Data
-getToDos().then((data) => {
-  displayTitle(data.slice(0, 3));
+get().then((data) => {
+  console.log(data)
+  displayTitle(data.data.slice(0, 3));
 });
+
 
 const createLi = (element) => {
   let li = document.createElement("li");
@@ -23,11 +25,13 @@ const displayTitle = (data) => {
   }
 };
 
+
+
 //POST Data
 
 var form = document.querySelector("form");
 const formEvent = form.addEventListener("submit", async (event) => {
-  event.preventDefault();
+  event.preventDefault(); // prevent default action
   let title = document.getElementById("new-todos__name").value;
   let userId = document.getElementById("new-todos__userId").value;
 
